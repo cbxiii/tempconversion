@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Temperature Conversion Program</h1>
     
-    <div class="inputContainer">
-        <input type="number" id="myInput" placeholder="Enter..."/>
-        <div class="cToFContainer">
-            <input type="checkbox" id="cToFCheckbox" />
+    <form>
+            <h1>Temperature Conversion Program</h1>
+
+            <input type="number" id="myInput" placeholder="Enter..."/>
+            <br>
+            <input type="radio" id="cToFCheckbox" />
             <label for="cToFCheckbox">Celsius to Fahrenheit</label>
-        </div>
-        <div class="fToCContainer">
-            <input type="checkbox" id="fToCCheckbox" />
+            <br>
+
+            <input type="radio" id="fToCCheckbox" />
             <label for="fToCCheckbox">Fahrenheit to Celsius</label>
-        </div>
-        <button id="convertButton">Convert</button>
-    </div>
+            <br>
 
+            <button id="convertButton">Convert</button>
+            <br>
+            <p id="conversionResult"></p>
+        </form>
 
-    <p id="conversionResult"></p>
     <script src="index.js"></script>
 </body>
 </html>
