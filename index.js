@@ -3,31 +3,21 @@
 const myInput = document.getElementById("myInput");
 const cToFCheckbox = document.getElementById("cToFCheckbox");
 const fToCCheckbox = document.getElementById("fToCCheckbox");
-const convertButton = document.getElementById("convertButton");
 const conversionResult = document.getElementById("conversionResult");
-
-
-// functions for conversions
-function celsiusToFahrenheit(num) {
-    return (num * 9/5) + 32;
-}
-
-function fahrenheitToCelsius(num) {
-    return (num - 32) * 5/9;
-}
-
-// handle conversion with user input
 let value;
-convertButton.onclick = function() {
-    value = myInput.value;
 
+function convert() {
     if (cToFCheckbox.checked) {
-        conversionResult.textContent = celsiusToFahrenheit(value);
+        value = Number(myInput.value);
+        value = (value * 9/5) + 32;
+        conversionResult.textContent = value + "ºF";
     }
     else if (fToCCheckbox.checked) {
-        conversionResult.textContent = fahrenheitToCelsius(value);
+        value = Number(myInput.value);
+        value = (value - 32) * 5/9;
+        conversionResult.textContent = value + "ºC";
     }
     else {
-        window.alert("Please select a conversion method.");
+        conversionResult.textContent = "Please select a unit."
     }
 }
