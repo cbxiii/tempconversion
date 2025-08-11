@@ -1,5 +1,7 @@
 
 // get all necessary elements for conversion
+
+// get all necessary elements for conversion
 const myInput = document.getElementById("myInput");
 const cToFCheckbox = document.getElementById("cToFCheckbox");
 const fToCCheckbox = document.getElementById("fToCCheckbox");
@@ -22,12 +24,12 @@ convertButton.onclick = function() {
     value = myInput.value;
 
     if (cToFCheckbox.checked) {
-        conversionResult.textContent = celsiusToFahrenheit(value);
+        conversionResult.textContent = celsiusToFahrenheit(value).toFixed(1) + "ºF";
     }
     else if (fToCCheckbox.checked) {
-        conversionResult.textContent = fahrenheitToCelsius(value);
+        conversionResult.textContent = fahrenheitToCelsius(value).toFixed(1) + "ºC";
     }
     else {
-        window.alert("Please select a conversion method.");
+        conversionResult.textContent = "Please select a unit.";
     }
 }
