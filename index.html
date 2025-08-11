@@ -8,22 +8,23 @@
 </head>
 <body>
     
-    <form>
-            <h1>Temperature Conversion Program</h1>
+    <div>
 
-            <input type="number" id="myInput" placeholder="Enter..."/>
-            <br>
-            <input type="radio" id="cToFCheckbox" />
-            <label for="cToFCheckbox">Celsius to Fahrenheit</label>
-            <br>
+        <h1>Temperature Conversion Program</h1>
 
-            <input type="radio" id="fToCCheckbox" />
-            <label for="fToCCheckbox">Fahrenheit to Celsius</label>
-            <br>
+        <input type="number" id="myInput" value="0" placeholder="Enter..."/>
+        <br>
+        <input type="radio" id="cToFCheckbox" name="unit"/>
+        <label for="cToFCheckbox">Celsius to Fahrenheit</label>
+        <br>
 
-            <button type="button" id="convertButton">Convert</button>
-            <p id="conversionResult">Select a unit.</p>
-    </form>
+        <input type="radio" id="fToCCheckbox" name="unit"/>
+        <label for="fToCCheckbox">Fahrenheit to Celsius</label>
+        <br>
+
+        <button type="button" id="convertButton">Convert</button>
+        <p id="conversionResult">Select a unit.</p>
+    </div>
 
     <script src="index.js"></script>
 </body>

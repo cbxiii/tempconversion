@@ -7,7 +7,7 @@ h1 {
     color: hsl(240, 37%, 60%);
 }
 
-form {
+div {
     background-color: white;
     text-align: center;
     max-width: 400px;
